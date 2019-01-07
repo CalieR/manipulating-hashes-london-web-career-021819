@@ -27,11 +27,11 @@ def first_challenge
   # end
 
   contacts["Freddy Mercury"].each do |subject, answer|
-        if subject == :favorite_icecream_flavors # confirm the correct key
-          answer.delete_if { |x| x == "strawberry"} # iterate over array of values, perform an action.
-        end
-      end
-    
+    if subject == :favorite_icecream_flavors # confirm the correct key
+      answer.delete_if { |x| x == "strawberry"} # iterate over array of values, perform an action.
+    end
+  end
+
 
 
 
