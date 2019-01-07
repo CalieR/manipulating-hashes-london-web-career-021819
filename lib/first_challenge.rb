@@ -20,9 +20,10 @@ def first_challenge
     if person == "Freddy Mercury"
       binding.pry
       info.each do |subject, answer|
+        binding.pry
         if subject == :favorite_icecream_flavors
           answer.delete_if { |x| x == "strawberry"}
-          binding.pry
+
         end
       end
     end
