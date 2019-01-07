@@ -20,7 +20,8 @@ def first_challenge
     if person == "Freddy Mercury"
       info.each do |subject, answer|
         if subject == :favorite_icecream_flavors
-        end  
+          binding.pry
+        end
       end
     end
   end
