@@ -31,8 +31,8 @@ def first_challenge
           answer.delete_if { |x| x == "strawberry"} # iterate over array of values, perform an action.
         end
       end
-    end
-  end
+    
+
 
 
   #remember to return your newly altered contacts hash!
