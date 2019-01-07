@@ -15,7 +15,8 @@ def first_challenge
     }
   }
 
-  #your code here
+  # 'iterate through each level until right one is reached' method:
+
   # contacts.each do |person, info|
   #   if person == "Freddy Mercury" # confirm you have the correct person hash
   #     info.each do |subject, answer|
@@ -26,6 +27,7 @@ def first_challenge
   #   end
   # end
 
+  # 'iterate directly over the Freddy Mercury hash by using an enumerator method on it' method:
   contacts["Freddy Mercury"].each do |subject, answer|
     if subject == :favorite_icecream_flavors # confirm the correct key
       answer.delete_if { |x| x == "strawberry"} # iterate over array of values, perform an action.
