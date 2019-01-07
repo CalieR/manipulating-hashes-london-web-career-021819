@@ -18,6 +18,7 @@ def first_challenge
   #your code here
   contacts.each do |person, info|
     if person == "Freddy Mercury"
+      binding.pry
       info.each do |subject, answer|
         if subject == :favorite_icecream_flavors
           binding.pry
