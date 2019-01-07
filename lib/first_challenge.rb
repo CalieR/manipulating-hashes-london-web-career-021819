@@ -17,10 +17,10 @@ def first_challenge
 
   #your code here
   contacts.each do |person, info|
-    if person == "Freddy Mercury"
+    if person == "Freddy Mercury" # confirm you have the correct person hash
       info.each do |subject, answer|
-        if subject == :favorite_icecream_flavors
-          answer.delete_if { |x| x == "strawberry"}
+        if subject == :favorite_icecream_flavors # confirm the correct key
+          answer.delete_if { |x| x == "strawberry"} # iterate over array of values, perform an action.
         end
       end
     end
