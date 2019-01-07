@@ -16,15 +16,24 @@ def first_challenge
   }
 
   #your code here
-  contacts.each do |person, info|
-    if person == "Freddy Mercury" # confirm you have the correct person hash
-      info.each do |subject, answer|
+  # contacts.each do |person, info|
+  #   if person == "Freddy Mercury" # confirm you have the correct person hash
+  #     info.each do |subject, answer|
+  #       if subject == :favorite_icecream_flavors # confirm the correct key
+  #         answer.delete_if { |x| x == "strawberry"} # iterate over array of values, perform an action.
+  #       end
+  #     end
+  #   end
+  # end
+
+  contacts["Freddy Mercury"].each do |subject, answer|
         if subject == :favorite_icecream_flavors # confirm the correct key
           answer.delete_if { |x| x == "strawberry"} # iterate over array of values, perform an action.
         end
       end
     end
   end
+end
 
   #remember to return your newly altered contacts hash!
   contacts
