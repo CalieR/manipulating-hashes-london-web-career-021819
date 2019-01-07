@@ -21,6 +21,7 @@ def first_challenge
       binding.pry
       info.each do |subject, answer|
         if subject == :favorite_icecream_flavors
+          answer.delete_if { |x| x == "strawberry"}
           binding.pry
         end
       end
