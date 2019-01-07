@@ -4,7 +4,7 @@ def first_challenge
   contacts = {
     "Jon Snow" => {
       name: "Jon",
-      email: "jon_snow@thewall.we", 
+      email: "jon_snow@thewall.we",
       favorite_icecream_flavors: ["chocolate", "vanilla", "mint chip"],
       knows: nil
     },
@@ -16,9 +16,15 @@ def first_challenge
   }
 
   #your code here
-  
+  contacts.each do |person, info|
+    if person == "Freddy Mercury"
+      info.each do |subject, answer|
+        if subject == :favorite_icecream_flavors
+        end  
+      end
+    end
+  end
 
   #remember to return your newly altered contacts hash!
   contacts
 end
-
