@@ -18,7 +18,7 @@ def first_challenge
   #your code here
   contacts.each do |person, info|
     if person == "Freddy Mercury"
-      info.each do |subject, answer|  
+      info.each do |subject, answer|
         if subject == :favorite_icecream_flavors
           answer.delete_if { |x| x == "strawberry"}
         end
